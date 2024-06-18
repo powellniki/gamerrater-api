@@ -49,6 +49,15 @@ CORS_ORIGIN_WHITELIST = (
 )
 
 
+CORS_ORIGIN_ALLOW_ALL = True  # Allow all origins (for development purposes)
+
+# Alternatively, you can specify a list of allowed origins
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+]
+
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
