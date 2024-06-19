@@ -1,0 +1,142 @@
+[
+    {
+        "model": "raterapi.game",
+        "pk": 1,
+        "fields": {
+            "title": "Catan",
+            "description": "Players collect resources and use them to build roads, settlements, and cities to earn points",
+            "designer": "Klaus Teuber",
+            "release_year": 1995,
+            "number_players": "3-4",
+            "play_time": "60-120 minutes",
+            "age_rec": "10+",
+            "user": 1
+        }
+    },
+    {
+        "model": "raterapi.game",
+        "pk": 2,
+        "fields": {
+            "title": "Pandemic",
+            "description": "Players work cooperatively to stop the spread of diseases and find cures",
+            "designer": "Matt Leacock",
+            "release_year": 2008,
+            "number_players": "2-4",
+            "play_time": "45 minutes",
+            "age_rec": "8+",
+            "user": 1
+        }
+    },
+    {
+        "model": "raterapi.game",
+        "pk": 3,
+        "fields": {
+            "title": "Ticket to Ride",
+            "description": "Players collect train cards to claim railway routes accross North America",
+            "designer": "Alan R. Moon",
+            "release_year": 2004,
+            "number_players": "2-5",
+            "play_time": "30-60 minutes",
+            "age_rec": "8+",
+            "user": 1
+        }
+    },
+    {
+        "model": "raterapi.game",
+        "pk": 4,
+        "fields": {
+            "title": "Carcassonne",
+            "description": "Players draw and place tiles to build cities, roads, and fields",
+            "designer": "Klaus-Jurgen Wrede",
+            "release_year": 2000,
+            "number_players": "2-5",
+            "play_time": "35 minutes",
+            "age_rec": "7+",
+            "user": 1
+        }
+    },
+    {
+        "model": "raterapi.game",
+        "pk": 5,
+        "fields": {
+            "title": "7 Wonders",
+            "description": "Players develop a civilization by drafting cards and building wonders",
+            "designer": "Antoine Bauza",
+            "release_year": 2010,
+            "number_players": "2-7",
+            "play_time": "30 minutes",
+            "age_rec": "10+",
+            "user": 1
+        }
+    },
+    {
+        "model": "raterapi.game",
+        "pk": 6,
+        "fields": {
+            "title": "Splendor",
+            "description": "Players collect gems and develop cards to earn points and prestige",
+            "designer": "Marc Andre",
+            "release_year": 2014,
+            "number_players": "2-4",
+            "play_time": "30 minutes",
+            "age_rec": "10+",
+            "user": 1
+        }
+    },
+    {
+        "model": "raterapi.game",
+        "pk": 7,
+        "fields": {
+            "title": "Dominion",
+            "description": "A deck-building game where players collect cards to build a kingdom",
+            "designer": "Donald X. Vaccarino",
+            "release_year": 2008,
+            "number_players": "2-4",
+            "play_time": "30 minutes",
+            "age_rec": "13+",
+            "user": 1
+        }
+    },
+    {
+        "model": "raterapi.game",
+        "pk": 8,
+        "fields": {
+            "title": "Codenames",
+            "description": "Players give one-word clues to their teammates to find their agents in a grid of words",
+            "designer": "Vlaada Chvatil",
+            "release_year": 2015,
+            "number_players": "2-8",
+            "play_time": "15 minutes",
+            "age_rec": "14+",
+            "user": 1
+        }
+    },
+    {
+        "model": "raterapi.game",
+        "pk": 9,
+        "fields": {
+            "title": "Azul",
+            "description": "Players draft tiles to complete patterns and score points",
+            "designer": "Michael Kiesling",
+            "release_year": 2017,
+            "number_players": "2-4",
+            "play_time": "30-45 minutes",
+            "age_rec": "8+",
+            "user": 1
+        }
+    },
+    {
+        "model": "raterapi.game",
+        "pk": 10,
+        "fields": {
+            "title": "Gloomhaven",
+            "description": "A cooperative, campaign-driven game where players take on the roles of adventurers in a dark world",
+            "designer": "Isaac Childres",
+            "release_year": 2017,
+            "number_players": "1-4",
+            "play_time": "60-120 minutes",
+            "age_rec": "14+",
+            "user": 1
+        }
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "model": "raterapi.rating",
+        "pk": 1,
+        "fields": {
+            "rating": 5,
+            "game": 1,
+            "user": 1
+        }
+    },
+    {
+        "model": "raterapi.rating",
+        "pk": 2,
+        "fields": {
+            "rating": 4,
+            "game": 7,
+            "user": 1
+        }
+    },
+    {
+        "model": "raterapi.rating",
+        "pk": 3,
+        "fields": {
+            "rating": 2,
+            "game": 3,
+            "user": 1
+        }
+    },
+    {
+        "model": "raterapi.rating",
+        "pk": 4,
+        "fields": {
+            "rating": 3,
+            "game": 8,
+            "user": 1
+        }
+    },
+    {
+        "model": "raterapi.rating",
+        "pk": 5,
+        "fields": {
+            "rating": 1,
+            "game": 9,
+            "user": 1
+        }
+    }
+]

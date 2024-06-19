@@ -1,0 +1,47 @@
+[
+    {
+        "model": "raterapi.review",
+        "pk": 1,
+        "fields": {
+            "review": "This is a great game! Everyone should have it in their collection!",
+            "game": 10,
+            "user": 1
+        }
+    },
+    {
+        "model": "raterapi.review",
+        "pk": 2,
+        "fields": {
+            "review": "This is a great game! Everyone should have it in their collection!",
+            "game": 8,
+            "user": 1
+        }
+    },
+    {
+        "model": "raterapi.review",
+        "pk": 3,
+        "fields": {
+            "review": "This is a great game! Everyone should have it in their collection!",
+            "game": 6,
+            "user": 1
+        }
+    },
+    {
+        "model": "raterapi.review",
+        "pk": 4,
+        "fields": {
+            "review": "This is a great game! Everyone should have it in their collection!",
+            "game": 4,
+            "user": 1
+        }
+    },
+    {
+        "model": "raterapi.review",
+        "pk": 5,
+        "fields": {
+            "review": "This is a great game! Everyone should have it in their collection!",
+            "game": 2,
+            "user": 1
+        }
+    }
+]

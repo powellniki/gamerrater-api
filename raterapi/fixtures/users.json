@@ -12,7 +12,9 @@
             "email": "meg@ducharme.com",
             "is_staff": true,
             "is_active": true,
-            "date_joined": "2022-10-21T21:16:33.812Z"
+            "date_joined": "2022-10-21T21:16:33.812Z",
+            "groups": [],
+            "user_permissions": []
         }
     },
     {
@@ -28,7 +30,9 @@
             "email": "ryan@ryantanay.com",
             "is_staff": false,
             "is_active": true,
-            "date_joined": "2022-10-21T21:15:55.764Z"
+            "date_joined": "2022-10-21T21:15:55.764Z",
+            "groups": [],
+            "user_permissions": []
         }
     },
     {
@@ -44,7 +48,9 @@
             "email": "jenna@solis.com",
             "is_staff": false,
             "is_active": true,
-            "date_joined": "2022-10-21T21:17:24.322Z"
+            "date_joined": "2022-10-21T21:17:24.322Z",
+            "groups": [],
+            "user_permissions": []
         }
     },
     {
@@ -60,7 +66,9 @@
             "email": "bryan@nilson.com",
             "is_staff": false,
             "is_active": true,
-            "date_joined": "2022-10-21T21:18:12.946Z"
+            "date_joined": "2022-10-21T21:18:12.946Z",
+            "groups": [],
+            "user_permissions": []
         }
     },
     {
@@ -76,7 +84,9 @@
             "email": "emily@lemmon.com",
             "is_staff": true,
             "is_active": true,
-            "date_joined": "2022-10-21T21:18:55.741Z"
+            "date_joined": "2022-10-21T21:18:55.741Z",
+            "groups": [],
+            "user_permissions": []
         }
     },
     {
@@ -92,7 +102,9 @@
             "email": "tyler@hilliard.com",
             "is_staff": true,
             "is_active": true,
-            "date_joined": "2022-10-21T21:19:24.892Z"
+            "date_joined": "2022-10-21T21:19:24.892Z",
+            "groups": [],
+            "user_permissions": []
         }
     }
 ]

@@ -1,0 +1,47 @@
+[
+    {
+        "model": "raterapi.picture",
+        "pk": 1,
+        "fields": {
+            "picture": "https://www.hasbro.com/common/productimages/en_US/583FB230960B494AA31338CDF7C1ED79/c173734d5dee154f92ef4de1834a47e39e52d3b8.jpg",
+            "game": 2,
+            "user": 1
+        }
+    },
+    {
+        "model": "raterapi.picture",
+        "pk": 2,
+        "fields": {
+            "picture": "https://www.hasbro.com/common/productimages/en_US/583FB230960B494AA31338CDF7C1ED79/c173734d5dee154f92ef4de1834a47e39e52d3b8.jpg",
+            "game": 7,
+            "user": 1
+        }
+    },
+    {
+        "model": "raterapi.picture",
+        "pk": 3,
+        "fields": {
+            "picture": "https://www.hasbro.com/common/productimages/en_US/583FB230960B494AA31338CDF7C1ED79/c173734d5dee154f92ef4de1834a47e39e52d3b8.jpg",
+            "game": 1,
+            "user": 1
+        }
+    },
+    {
+        "model": "raterapi.picture",
+        "pk": 4,
+        "fields": {
+            "picture": "https://www.hasbro.com/common/productimages/en_US/583FB230960B494AA31338CDF7C1ED79/c173734d5dee154f92ef4de1834a47e39e52d3b8.jpg",
+            "game": 3,
+            "user": 1
+        }
+    },
+    {
+        "model": "raterapi.picture",
+        "pk": 5,
+        "fields": {
+            "picture": "https://www.hasbro.com/common/productimages/en_US/583FB230960B494AA31338CDF7C1ED79/c173734d5dee154f92ef4de1834a47e39e52d3b8.jpg",
+            "game": 6,
+            "user": 1
+        }
+    }
+]
