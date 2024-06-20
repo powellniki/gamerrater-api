@@ -1,4 +1,4 @@
-from raterapi.models import Game
+from raterapi.models import Game, Category
 from rest_framework import serializers, status
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
@@ -27,10 +27,10 @@ class GameView(ViewSet):
         title = request.data.get('title', None)
         description = request.data.get('description', None)
         designer = request.data.get('designer', None)
-        release_year = request.data.get('release_year', None)
-        number_players = request.data.get('number_players', None)
-        play_time = request.data.get('play_time', None)
-        age_rec = request.data.get('age_rec', None)
+        release_year = request.data.get('year', None)
+        number_players = request.data.get('players', None)
+        play_time = request.data.get('playTime', None)
+        age_rec = request.data.get('ageRec', None)
         user=request.user
 
         if title is None or description is None or designer is None or release_year is None or number_players is None or play_time is None or age_rec is None:
@@ -62,9 +62,14 @@ class GameView(ViewSet):
     def destroy(self, request, pk):
         pass
 
+class CategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Category
+        fields = ['name',]
 
 class GameSerializer(serializers.ModelSerializer):
+    categories = CategorySerializer(many=True, read_only=True)
 
     class Meta:
         model = Game
-        fields = ('id', 'title', 'description', 'designer', 'release_year', 'number_players', 'play_time', 'age_rec',)
+        fields = ('id', 'title', 'description', 'designer', 'release_year', 'number_players', 'play_time', 'age_rec', 'categories', )

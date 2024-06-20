@@ -2,10 +2,11 @@ from django.contrib import admin
 from django.urls import include, path
 from rest_framework.routers import DefaultRouter
 from raterapi.views import UserViewSet
-from raterapi.views import GameView
+from raterapi.views import GameView, ReviewView
 
 router = DefaultRouter(trailing_slash=False)
 router.register(r'games', GameView, 'game')
+router.register(r'reviews', ReviewView, 'review')
 
 urlpatterns = [
     path('', include(router.urls)),
