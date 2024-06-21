@@ -22,7 +22,7 @@ class ReviewView(ViewSet):
         return Response(serialized.data, status=status.HTTP_200_OK)
 
     def create(self, request):
-
+        
         # extract fields from client request body
         game_id = request.data.get('game', None)
         game_instance = Game.objects.get(pk=game_id)
