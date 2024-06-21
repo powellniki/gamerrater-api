@@ -52,6 +52,7 @@ class ReviewView(ViewSet):
         #send data back in a response with 201 status code
         return Response(serialized_review.data, status=status.HTTP_201_CREATED)
     
+    
 class GameReviewSerializer(serializers.ModelSerializer):
 
     class Meta:

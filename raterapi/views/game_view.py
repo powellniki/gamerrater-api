@@ -56,7 +56,35 @@ class GameView(ViewSet):
 
 
     def update(self, request, pk):
-        pass
+        # extract fields from client request body
+        title = request.data.get('title', None)
+        description = request.data.get('description', None)
+        designer = request.data.get('designer', None)
+        release_year = request.data.get('release_year', None)
+        number_players = request.data.get('number_players', None)
+        play_time = request.data.get('play_time', None)
+        age_rec = request.data.get('age_rec', None)
+        # user=request.user
+
+        if title is None or description is None or designer is None or release_year is None or number_players is None or play_time is None or age_rec is None:
+            return Response({'message': 'You must provide all properties in your JSON'}, status=status.HTTP_400_BAD_REQUEST)
+        
+        # Update existing row in database
+        try:
+            requested_game = Game.objects.get(pk=pk)
+            requested_game.title = title
+            requested_game.description = description
+            requested_game.designer = designer
+            requested_game.release_year = release_year
+            requested_game.number_players = number_players
+            requested_game.play_time = play_time
+            requested_game.age_rec = age_rec
+            requested_game.save()
+
+            # Send data back in a response, with 204 status code
+            return Response(None, status=status.HTTP_204_NO_CONTENT)
+        except Game.DoesNotExist:
+            return Response({'message': 'The game you are trying to edit does not exist'}, status=status.HTTP_404_NOT_FOUND)
 
 
     def destroy(self, request, pk):
