@@ -60,7 +60,8 @@ class GameView(ViewSet):
             game = Game.objects.get(pk=pk)
 
             # is the authenticated user allowed to edit the game?
-            self.check_object_permissions(request, game)
+            if game.user != request.user:
+                return Response({'message': 'You do not have permission to edit this game'}, status=status.HTTP_403_FORBIDDEN)
 
             serializer = GameSerializer(data=request.data)
             if serializer.is_valid():
