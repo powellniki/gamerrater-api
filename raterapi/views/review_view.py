@@ -17,7 +17,13 @@ class ReviewView(ViewSet):
         
     
     def list(self, request):
+        chosen_game = request.query_params.get('game', None)
+
         reviews = Review.objects.all()
+
+        if chosen_game is not None:
+            reviews = reviews.filter(game=chosen_game)
+            
         serialized = ReviewSerializer(reviews, many=True)
         return Response(serialized.data, status=status.HTTP_200_OK)
 
@@ -50,10 +56,10 @@ class GameReviewSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Game
-        fields = ('title',)
+        fields = ('id', 'title',)
 
 class ReviewSerializer(serializers.ModelSerializer):
-    game = GameReviewSerializer(many=False)
+    # game = GameReviewSerializer(many=False)
 
     class Meta:
         model = Review
