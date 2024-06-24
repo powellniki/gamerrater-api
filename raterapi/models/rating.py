@@ -7,5 +7,5 @@ class Rating(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="rating")
     rating = models.IntegerField(validators=[
         MinValueValidator(1),
-        MaxValueValidator(5)
+        MaxValueValidator(10)
     ])

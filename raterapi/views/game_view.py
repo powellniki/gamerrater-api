@@ -96,6 +96,8 @@ class GameSerializer(serializers.ModelSerializer):
     # Declare that an ad-hoc property should be included in JSON
     is_owner = serializers.SerializerMethodField()
 
+    average_rating = serializers.ReadOnlyField()
+
     # Function containing instructions for ad-hoc property
     def get_is_owner(self, obj):
         # Check if the authenticated user is the owner
@@ -103,4 +105,4 @@ class GameSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Game
-        fields = ('id', 'title', 'description', 'designer', 'release_year', 'number_players', 'play_time', 'age_rec', 'is_owner', 'categories', )
+        fields = ('id', 'title', 'description', 'designer', 'release_year', 'number_players', 'play_time', 'age_rec', 'is_owner', 'categories', 'average_rating',)
